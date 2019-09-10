@@ -1,0 +1,273 @@
+
+
+
+/*global styles*/
+
+h1{
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.3em;
+  color:var(--headerDark);
+  font-weight: 600;
+  text-align: center;
+  
+}
+h3{
+  padding: 0;
+  margin: 0;
+  font-size:1em;
+  font-weight:normal;
+}
+hr{ 
+  border-top-color: rgb(241,247,251);
+  border-top-style:solid;
+  border-top-width:2px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color:var(--paragraphFont);
+  font-weight:400;
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+a{
+  font-weight:700;
+}
+a:hover{
+  cursor:pointer;
+}
+
+
+
+
+/*start navigation*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  --backgroundPrimary:#FFF;
+  --backgroundSecondary:#f6f9fc;
+  --primaryFont:black;
+  --paragraphFont:#696969;
+  --headerDark:black;
+  --headerNormal:#29B6F6;
+  --headerLight:#9ca0ff;
+  --linkColor:#6772e5;
+  background-color: var(--backgroundPrimary);
+  color:var(--primaryFont);
+}
+header{
+	background:var(--backgroundPrimary);
+	width: 100%;
+	padding: 40px 0;
+	color: var(--paragraphFont);
+	text-align: center;
+}
+
+.heading{
+	background-color:var(--backgroundPrimary);
+	padding: 30px 0;
+	color: var(--paragraphFont);
+	text-align: center;
+}
+.titledesc{
+  background-color:var(--backgroundSecondary);
+  border-radius:6px;
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+  padding:25px;
+}
+
+nav ul{
+	background-color: var(--backgroundSecondary);
+	color: var(--paragraphFont);
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+
+}
+.gallerynav{
+  color:var(--linkColor);
+  border-bottom:4px solid var(--linkColor);
+  border-radius:2px;
+}
+nav ul li:hover{
+	color:var(--linkColor);
+  border-bottom:4px solid var(--linkColor);
+  border-radius:2px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+.handle {
+	width: 100%;
+	background-color: #005C48;
+	box-sizing: border-box;
+	padding: 15px;
+	cursor: pointer;
+	display: none;
+}
+p.menu{
+	display: inline-block;
+}
+.menu_icon div {
+  background-color: white;
+  border-radius: 2px;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+}
+.menu_icon{
+	float: right;
+	margin: .5em 0;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+      padding-top:10px;
+    }
+}
+/* end .navbar
+start image gallery */
+
+.photogridwrapper{
+  margin-left:15%;
+  margin-right:15%;
+  width:70%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-bottom:5%;
+}
+.header h1{
+  padding-top:15%;
+  font-size:2.0em;
+  letter-spacing: 0.025%;
+}
+.header p{
+  padding-bottom:15%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0px 4px;
+}
+
+.column img {
+  margin-top: 5px;
+
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1068px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .photogridwrapper{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .photogridwrapper{
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+
+
+/*end .contact
+start footer */
+
+/*social media icons */
+.social{
+  color:var(--paragraphFont);
+  padding-left:0.75%;
+  padding-right:0.75%;
+  padding-bottom:2.5%;
+} 
+
+.footerhr{
+  margin: 0;
+  color:#999;
+  height:2px;
+}
+
+.footer{
+  padding-top:2.5%;
+  background: var(--backgroundPrimary);
+  text-align: center;
+}
+.footer a{
+  float:center;
+  font-size:1em;
+  color:var(--linkColor);
+  text-decoration: none;
+  padding-top:5%;
+  padding-left:2%;
+  padding-right: 2%;
+}
+.footer img{
+  margin-top:1%;
+
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+#owners{
+  color:var(--paragraphFont);
+  text-align: center;
+}
+.footer hr{
+  margin-left:10%;
+  margin-right:10%;
+  width:80%;
+}
+.signature{
+  color:var(--primaryFont);
+  font-size:1.6em;
+}
