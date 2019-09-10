@@ -1,11 +1,5 @@
 
-
-/*  https://codepen.io/conorjmcnamara/pen/VNPQLZ 
-https://codepen.io/luiquecruz/pen/VVqEow
-https://codepen.io/YotaPen/pen/bvWPzX
-*/
 /*global styles*/
-
 
 
 h1{
@@ -42,12 +36,6 @@ a{
 a:hover{
   cursor:pointer;
 }
-
-
-
-
-
-
 
 
 
@@ -299,9 +287,6 @@ figure.slider figure figcaption {
 }
 
 
-
-
-
 /*end aboutme section
 start events section */
 
@@ -387,9 +372,6 @@ start events section */
 .boxstyle:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-
-
-
 
 
 .events hr{
@@ -512,16 +494,6 @@ start events section */
 
 
 
-
-
-
-
-
-
-
-
-
-
 .container {
   text-align: center;
 }
@@ -551,11 +523,11 @@ start events section */
 }
 
 .container h2{
-	padding-bottom:0%;
-	margin-bottom:0%;
+  padding-bottom:0%;
+  margin-bottom:0%;
 }
 .container p{
-	margin-top:1%;
+  margin-top:1%;
   padding-top:0;
   margin-bottom:1%;
   padding-bottom:0;
